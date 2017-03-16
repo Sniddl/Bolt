@@ -25,6 +25,7 @@ BY SYS
                 <center><img src="images/bolt2.svg" class="navlogo"></center>
                 <hr>
                 @if(isset($Winners))
+                <center><p>Total entries: {{$Other_info[0]}} | Execution time: {{$Other_info[1]}}</p></center>
                 <ul class="demo-list-three mdl-list">
                   @for($a = 0; $a < sizeof($Winners); $a++)
                   <li class="mdl-list__item mdl-list__item--three-line">

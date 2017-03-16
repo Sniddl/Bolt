@@ -15,6 +15,7 @@ class giveaway extends Controller
 
         $BodyWinners = array();//Initial, empty, arrays
         $Winners = array();
+        $Other_info = array();
 
         $initialrequest = file_get_contents('https://api.pushshift.io/reddit/search?link_id='.$postCode);
         //$file = '/Users/Olly/Desktop/comments.php';
@@ -47,6 +48,8 @@ class giveaway extends Controller
               }
             }
         }
-        return View::make('layouts.result', compact('BodyWinners', 'Winners'));
+        array_push($Other_info, $request_decoded["metadata"]["results"]);
+        array_push($Other_info, $request_decoded["metadata"]["execution_time"]);
+        return View::make('layouts.result', compact('BodyWinners', 'Winners', 'Other_info'));
     }
 }
