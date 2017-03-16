@@ -132,11 +132,11 @@ footer {
 .mdl-textfield__label {
   color: rgba(0, 0, 0, 0.47);;
 }
-#entry .mdl-button{
-  font-weight: bold;
-  position: absolute;
-  bottom: 20px;
-  right: 10px
+#entry .mdl-button {
+    font-weight: bold;
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
 }
 
 #result-col-6{
