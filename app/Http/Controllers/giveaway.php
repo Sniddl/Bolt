@@ -8,6 +8,12 @@ use View;
 class giveaway extends Controller
 {
     public function requestFromAPI(Request $request){
+
+      $this->validate($request, [
+          'code' => 'required|min:6|max:6|alpha_num',
+          'number' => 'required|numeric',
+      ]);
+
         $postCode = $request->input('code');
         $amount = $request->input('number');
         $keyword = $request->input('keyword');
