@@ -54,5 +54,6 @@ BY FMWK aka. Sys
     <!-- <div id="entry-thankyou" class="col-md-6" style="display:none;">
       <center><p>Thank you for visiting Bolt. If you have a bug/suggestion feel free to contact me on Reddit. Link top-right<p></center>
     </div> -->
+    @include('layouts.foot')
   </body>
 </html>

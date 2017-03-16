@@ -192,3 +192,15 @@ footer {
 .mdl-textfield__label.success::after {
     background-color: #4caf50 !important;
 }
+
+.bolt-result:hover{
+  background: rgba(0, 0, 0, 0.16);
+}
+.bolt-result{
+  padding-top: 28px;
+  height: 70px;
+  cursor: pointer;
+}
+.bolt-result .mdl-list__item-secondary-content{
+  height: 36px;
+}
