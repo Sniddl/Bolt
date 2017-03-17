@@ -8,7 +8,7 @@
                   <!-- Links -->
                   <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="{{URL::to('/')}}">Home</a>
-                    <a class="mdl-navigation__link" target="_blank" href="https://www.reddit.com/message/compose/?to=iPlayZombies2&subject=%5BQuestion%2FSuggestion%5DBolt%20for%20Reddit&message=Please%20keep%20the%20subject%20the%20same%20">Contact</a>
+                    <a class="mdl-navigation__link" target="_blank" href="https://www.reddit.com/message/compose/?to=FMWK&subject=%5BQuestion%2FSuggestion%5DBolt%20for%20Reddit&message=Please%20keep%20the%20subject%20the%20same%20">Contact</a>
                   </nav>
                 </div>
               </header>
