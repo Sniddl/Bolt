@@ -21,7 +21,7 @@ class giveaway extends Controller
 
         $winners = array();
         $BodyWinners = array();//Initial, empty, arrays
-        $Winners = array();
+        $Other_info = array();
 
         $initialrequest = file_get_contents('https://api.pushshift.io/reddit/search?link_id='.$code);
         //$file = '/Users/Olly/Desktop/comments.php';

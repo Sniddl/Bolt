@@ -25,27 +25,23 @@ BY SNIDDL
                 <center><img src="/images/squid-bolt.png" class="navlogo"></a></center>
                 <hr>
                 @if(isset($winners))
-
                 <ul class="demo-list-three mdl-list">
-                @foreach ($winners as $winner)
-
-                <li class="mdl-list__item mdl-list__item--three-line bolt-result"
-                    data-action = "https://reddit.com/user/{{ $winner['author'] }}">
-                  <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-avatar">person</i>
-                    <span>{{ $winner['author'] }}</span>
-                    <span class="mdl-list__item-text-body">
-                      <?php echo substr($winner['body'], 0, 150) ?>
+                  @foreach ($winners as $winner)
+                  <li class="mdl-list__item mdl-list__item--three-line bolt-result"
+                      data-action = "https://reddit.com/user/{{ $winner['author'] }}">
+                    <span class="mdl-list__item-primary-content">
+                      <i class="material-icons mdl-list__item-avatar">person</i>
+                      <span>{{ $winner['author'] }}</span>
+                      <span class="mdl-list__item-text-body">
+                        <?php echo substr($winner['body'], 0, 150) ?>
+                      </span>
                     </span>
-                  </span>
-                  <span class="mdl-list__item-secondary-content">
-                    <i class="material-icons">chevron_right</i></a>
-                  </span>
-                </li>
-                <hr>
-
-                @endforeach
-
+                    <span class="mdl-list__item-secondary-content">
+                      <i class="material-icons">chevron_right</i></a>
+                    </span>
+                  </li>
+                  <hr>
+                  @endforeach
                 @elseif(isset($status))
                 <center>
                   <p class="error-status">{{$status}}</p>
@@ -58,14 +54,11 @@ BY SNIDDL
                 @else
                 <p class="error-fatal">FATAL!</p>
                 @endif
-
                 </ul>
-
                 </div>
             </div>
             </div>
     </div>
-
     @include('layouts.foot')
   </body>
 </html>
