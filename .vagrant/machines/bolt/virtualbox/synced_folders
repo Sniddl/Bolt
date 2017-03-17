@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/Code/bolt":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/Code/bolt","hostpath":"/Volumes/Storage/code/Bolt","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Volumes/Storage/code/Bolt","disabled":false,"__vagrantfile":true}}}
