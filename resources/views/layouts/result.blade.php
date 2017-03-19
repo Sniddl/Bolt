@@ -23,7 +23,6 @@ BY SNIDDL
               <div class="col-md-3">
               </div>
               <div id="result-col-6" class="col-md-6">
-              <center><img src="/images/squid-bolt.png" class="navlogo"></a></center>
               <hr>
               @if(isset($winners))
               <ul class="demo-list-three mdl-list">

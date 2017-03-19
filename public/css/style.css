@@ -132,12 +132,9 @@ footer {
 .mdl-textfield__label {
   color: rgba(0, 0, 0, 0.47);;
 }
-/*#entry .mdl-button {
+#entry .mdl-button {
     font-weight: bold;
-    position: absolute;
-    bottom: 80px;
-    right: 10px;
-}*/
+}
 
 #result-col-6{
   margin-top: 50px;
@@ -208,7 +205,4 @@ footer {
     list-style: none;
     text-align: left;
     padding: 0;
-}
-.advanced{
-  display: none;
 }

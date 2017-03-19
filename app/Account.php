@@ -15,7 +15,6 @@ class Account
     } catch (Exception $e) {
       return View::make('layouts.error')->with('status', 'Sorry, we encountered an error with your karma option');
     }
-
     $this->res = $ReditAPI['data'];
     $this->res['age'] = Carbon::createFromTimestamp($this->res['created'])->diffForHumans(null, true);
     Account::save($this->res);
