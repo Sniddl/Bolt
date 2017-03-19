@@ -91,4 +91,8 @@ $(function(){
     num.trigger('input');
   }
 
+  $('enable_adv_label').click(function(){
+    $('.advanced').toggle();
+  })
+
 });

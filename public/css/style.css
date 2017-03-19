@@ -111,8 +111,8 @@ footer {
   box-shadow: 0px 10px 15px rgb(189, 189, 189);
   border-radius: 5px;
   margin-top: 71px;
-  height: 620px;
-  padding-top: 10px;
+  height: auto;
+  padding: 10px 20px;
 }
 #entry-thankyou{
   background: #dcdcdc;
@@ -121,10 +121,10 @@ footer {
   height: 70px;
   margin-top: 40px;
   padding-top: 10px;
-  position: absolute;
+  position: relative;;
   bottom: 1px;
-  left: 50%;
-  transform: translateX(-50%);
+
+
 }
 .mdl-textfield__input{
   border-bottom: 1px solid rgba(0, 0, 0, 0.47);
@@ -132,12 +132,12 @@ footer {
 .mdl-textfield__label {
   color: rgba(0, 0, 0, 0.47);;
 }
-#entry .mdl-button {
+/*#entry .mdl-button {
     font-weight: bold;
     position: absolute;
     bottom: 80px;
     right: 10px;
-}
+}*/
 
 #result-col-6{
   margin-top: 50px;
@@ -203,4 +203,12 @@ footer {
 }
 .bolt-result .mdl-list__item-secondary-content{
   height: 36px;
+}
+.tooltip-list{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+.advanced{
+  display: none;
 }

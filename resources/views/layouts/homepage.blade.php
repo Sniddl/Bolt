@@ -39,16 +39,21 @@ BY SNIDDL
                     <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="{{ old('keyword') }}">
                     <label class="mdl-textfield__label" for="user">Keyword <small style="opacity: .5">(ex. Baby)</small></label>
                     </div>
+                    <br>
+                    <div style="margin-top: 40px">
+                      Advanced Options
+                    </div>
                     <hr>
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="enable_adv">
+
+                    <!-- <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="enable_adv" id="enable_adv_label">
                       <input name="enable_adv" type="checkbox" id="enable_adv" class="mdl-checkbox__input" value="enabled_adv">
                       <span class="mdl-checkbox__label">Enable advanced options</span>
-                    </label>
-                    <div class="mdl-textfield mdl-js-textfield">
+                    </label> -->
+                    <div class="mdl-textfield mdl-js-textfield ">
                     <input class="mdl-textfield__input" type="number" name="karma" id="karama" value="{{ old('karma') }}">
                     <label class="mdl-textfield__label" for="user">Karma</label>
                     </div>
-                    <div class="mdl-textfield mdl-js-textfield">
+                    <div class="mdl-textfield mdl-js-textfield ">
                     <input class="mdl-textfield__input" type="number" name="age" id="age" value="{{ old('age') }}">
                     <label class="mdl-textfield__label" for="user">Account age (Days)</label>
                     </div>
