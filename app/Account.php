@@ -3,6 +3,7 @@ namespace App;
 use Exception;
 use View;
 use Carbon\Carbon;
+use Illuminate\Routing\Redirector;
 
 class Account
 {
@@ -11,15 +12,17 @@ class Account
   function __construct($account)
   {
     //dd('cats');
-    // try {
-    //   $ReditAPI = ($account == '[deleted]') ?: json_decode(file_get_contents('https://www.reddit.com/user/'. $account . '/about.json'), true);
-    // } catch (Exception $e) {
-    //   return View::make('layouts.error')->with('status', 'Sorry, we encountered an error with your karma option');
-    // }
-    //$this->res = $ReditAPI['data'];
-    $this->res = "cats";
-    // $this->res['age'] = Carbon::createFromTimestamp($this->res['created'])->diffForHumans(null, true);
-    Account::save($this->res);
+    if ($account != '[deleted]'){
+      try {
+          $ReditAPI = json_decode(file_get_contents('https://www.reddit.com/user/'. $account . '/about.json'), true);
+          $this->res = $ReditAPI['data'];
+          $this->res['age'] = Carbon::createFromTimestamp($this->res['created'])->diffForHumans(null, true);
+          Account::save($this->res);
+      } catch (Exception $e) {
+        abort(403, "$e");
+      }
+    }
+
   }
 
 

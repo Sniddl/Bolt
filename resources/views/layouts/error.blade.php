@@ -21,7 +21,7 @@ BY SNIDDL
           <div class="container">
           <div class="row">
 
-              {{$status}}
+              <h2>{{ $exception->getMessage }}</h2>
 
           </div>
           </div>

@@ -18,3 +18,7 @@ Route::get('/contact', function(){
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/error/{text}', function () {
+    return View::make('layouts.error')->with('status', 'Sorry, we encountered an error with your karma option');
+})->name('error');

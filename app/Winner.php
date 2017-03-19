@@ -12,7 +12,6 @@ class Winner{
     $this->res  = $a['item'][$random];
     $continue   = true;
     $account = new Account($this->res['author']);
-    dd($account);
     $this->res['account'] = $account->res;
 
       if ( !empty($a['age']) && $continue){
