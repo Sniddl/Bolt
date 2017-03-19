@@ -19,7 +19,7 @@ class Account
           $this->res['age'] = Carbon::createFromTimestamp($this->res['created'])->diffForHumans(null, true);
           Account::save($this->res);
       } catch (Exception $e) {
-        abort(403, "$e");
+        throw new Exception($e->getMessage(), 1);
       }
     }
 
