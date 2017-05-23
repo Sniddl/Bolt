@@ -22,7 +22,6 @@ BY SNIDDL
             <div class="col-md-3">
             </div>
             <div id="entry" class="col-md-6" style="display:none;">
-            <center style="padding: 10px"><img src="images/squid-bolt.png" class="navlogo"></center>
                 <form action="/result" method="POST">
                   {{ csrf_field() }}
                     <div class="mdl-textfield mdl-js-textfield">
@@ -37,7 +36,7 @@ BY SNIDDL
                     </div>
                     <div class="mdl-textfield mdl-js-textfield">
                     <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="{{ old('keyword') }}">
-                    <label class="mdl-textfield__label" for="user">Keyword <small style="opacity: .5">(ex. Baby)</small></label>
+                    <label class="mdl-textfield__label" for="user">Keyword <small style="opacity: .5">(ex. Car)</small></label>
                     </div>
 
 
@@ -47,13 +46,18 @@ BY SNIDDL
                     </div>
                     <hr>
                     <div class="mdl-textfield mdl-js-textfield ">
-                    <input class="mdl-textfield__input" type="number" name="karma" id="karama" value="{{ old('karma') }}">
-                    <label class="mdl-textfield__label" for="user">Karma</label>
+                    <input class="mdl-textfield__input" type="number" name="karma" id="karma" value="{{ old('karma') }}">
+                    <label class="mdl-textfield__label" for="user">Comment Karma</label>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield ">
                     <input class="mdl-textfield__input" type="number" name="age" id="age" value="{{ old('age') }}">
+<<<<<<< HEAD
                     <label class="mdl-textfield__label" for="user">Account age (Days)</label>
                     </div> -->
+=======
+                    <label class="mdl-textfield__label" for="user">Account Age <small style="opacity: .5">(Days)</small></label>
+                    </div>
+>>>>>>> refs/remotes/origin/master
                     <button style="float:right" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Go</button>
                 </form>
             </div>
@@ -62,6 +66,12 @@ BY SNIDDL
             <div class="col-md-3"></div>
             <div id="entry-thankyou" class="col-md-6" style="display:none;">
               <center><p>Thank you for visiting Bolt. If you have a bugs/suggestion feel free to <a href="/contact">contact</a> me on Reddit.<p></center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div id="entry-thankyou" class="col-md-6" style="display:none;">
+              <center><p>Please note: If you encounter "Whoops, looks like something went wrong." it is likely that your options were not valid, too high or too low.<p></center>
             </div>
         </div>
         </div>

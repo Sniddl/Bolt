@@ -23,7 +23,6 @@ BY SNIDDL
               <div class="col-md-3">
               </div>
               <div id="result-col-6" class="col-md-6">
-              <center><img src="/images/squid-bolt.png" class="navlogo"></a></center>
               <hr>
               @if(isset($winners))
               <ul class="demo-list-three mdl-list">
@@ -45,7 +44,11 @@ BY SNIDDL
                   </span>
                 </li>
 
+<<<<<<< HEAD
                 <!-- <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right" data-mdl-for="id_{{--$count--}}">
+=======
+                <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right result-tooltip" data-mdl-for="id_{{$count}}">
+>>>>>>> refs/remotes/origin/master
                   <ul class="tooltip-list">
                     <li><strong>Karma</strong>: {{--$winner->account['comment_karma']--}}</li>
                     <li><strong>Age</strong>: {{--$winner->account['age']--}}</li>

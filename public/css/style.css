@@ -62,7 +62,7 @@ body{
   height: auto !important;
   height: 100%;
   margin: 0 auto -40px;
-  background: #dcdcdc;
+  background: #fff;
   }
 
 #push,
@@ -132,12 +132,9 @@ footer {
 .mdl-textfield__label {
   color: rgba(0, 0, 0, 0.47);;
 }
-/*#entry .mdl-button {
+#entry .mdl-button {
     font-weight: bold;
-    position: absolute;
-    bottom: 80px;
-    right: 10px;
-}*/
+}
 
 #result-col-6{
   margin-top: 50px;
@@ -147,6 +144,9 @@ footer {
 }
 #result-col-6 a:visited{
   color: rgb(63,81,181);
+}
+.mdl-tooltip.result-tooltip.is-active{
+  width:200px !important;
 }
 .block{
   background: #cccccc;
@@ -208,7 +208,4 @@ footer {
     list-style: none;
     text-align: left;
     padding: 0;
-}
-.advanced{
-  display: none;
 }
