@@ -19,8 +19,7 @@ BY SNIDDL
         </div>
         <div class="container">
         <div class="row">
-            <div class="col-md-3">
-            </div>
+            <div class="col-md-3"></div>
             <div id="entry" class="col-md-6" style="display:none;">
                 <form action="/result" method="POST">
                   {{ csrf_field() }}
@@ -38,9 +37,6 @@ BY SNIDDL
                     <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="{{ old('keyword') }}">
                     <label class="mdl-textfield__label" for="user">Keyword <small style="opacity: .5">(ex. Car)</small></label>
                     </div>
-
-
-                    <!-- <br>
                     <div style="margin-top: 40px">
                       Advanced Options
                     </div>
@@ -51,13 +47,8 @@ BY SNIDDL
                     </div>
                     <div class="mdl-textfield mdl-js-textfield ">
                     <input class="mdl-textfield__input" type="number" name="age" id="age" value="{{ old('age') }}">
-<<<<<<< HEAD
                     <label class="mdl-textfield__label" for="user">Account age (Days)</label>
-                    </div> -->
-=======
-                    <label class="mdl-textfield__label" for="user">Account Age <small style="opacity: .5">(Days)</small></label>
                     </div>
->>>>>>> refs/remotes/origin/master
                     <button style="float:right" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Go</button>
                 </form>
             </div>
