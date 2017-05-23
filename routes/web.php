@@ -12,7 +12,7 @@
 */
 Route::post('/result', 'giveaway@requestFromAPI');
 Route::get('/contact', function(){
-  return redirect('https://www.reddit.com/message/compose/?to=iPlayZombies2&subject=%5BQuestion%2FSuggestion%5DBolt%20for%20Reddit&message=Please%20keep%20the%20subject%20the%20same%20');
+  return redirect('https://www.reddit.com/message/compose/?to=FMWK&subject=%5BQuestion%2FSuggestion%5DBolt%20for%20Reddit&message=Please%20keep%20the%20subject%20the%20same%20');
 });
 
 Route::get('/', function () {

@@ -62,7 +62,7 @@ body{
   height: auto !important;
   height: 100%;
   margin: 0 auto -40px;
-  background: #dcdcdc;
+  background: #fff;
   }
 
 #push,
@@ -144,6 +144,9 @@ footer {
 }
 #result-col-6 a:visited{
   color: rgb(63,81,181);
+}
+.mdl-tooltip.result-tooltip.is-active{
+  width:200px !important;
 }
 .block{
   background: #cccccc;
