@@ -46,8 +46,8 @@ BY SNIDDL
 
                 <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right result-tooltip" data-mdl-for="id_{{$count}}">
                   <ul class="tooltip-list">
-                    <li><strong>Karma</strong>: {{$winner->account['comment_karma']}}</li>
-                    <li><strong>Age</strong>: {{$winner->account['age']}}</li>
+                    <li><strong>Karma</strong>: {{$winner->Account['comment_karma']}}</li>
+                    <li><strong>Age</strong>: {{$winner->Account['age']}}</li>
                   </ul>
                 </div>
                 <hr>
