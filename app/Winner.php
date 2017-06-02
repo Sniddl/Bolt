@@ -11,8 +11,8 @@ class Winner{
     $random     = random_int(0, $a['contestants'] - 1);
     $this->res  = $a['item'][$random];
     $continue   = true;
-    //$account = new Account($this->res['author']);
-    //$this->res['account'] = $account->res;
+    $account = new Account($this->res['author']);
+    $this->res['account'] = $account->res;
 
       if ( !empty($a['age']) && $continue){
         $requiredAge = time() - $a['age']*24*60*60;

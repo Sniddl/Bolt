@@ -26,7 +26,8 @@ BY SNIDDL
               <hr>
               @if(isset($winners))
               <ul class="demo-list-three mdl-list">
-                <?php $count = 0 ?>
+                <?php $count = 0;
+                ?>
                 @foreach ($winners as $winner)
                 <li class="mdl-list__item mdl-list__item--three-line bolt-result" id = "id_{{$count}}"
                     data-action = "https://reddit.com/user/{{ $winner->author }}">
@@ -43,13 +44,14 @@ BY SNIDDL
                     <i class="material-icons">chevron_right</i></a>
                   </span>
                 </li>
-
+                @if($winner->account)
                 <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right result-tooltip" data-mdl-for="id_{{$count}}">
                   <ul class="tooltip-list">
-                    <li><strong>Karma</strong>: {{$winner->Account['comment_karma']}}</li>
-                    <li><strong>Age</strong>: {{$winner->Account['age']}}</li>
+                    <li><strong>Karma</strong>: {{$winner->account['comment_karma']}}</li>
+                    <li><strong>Age</strong>: {{$winner->account['age']}}</li>
                   </ul>
                 </div>
+                @endif
                 <hr>
                 <?php $count ++ ?>
                 @endforeach
