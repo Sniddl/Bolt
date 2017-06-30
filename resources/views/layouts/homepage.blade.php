@@ -25,7 +25,7 @@ BY SNIDDL
                   {{ csrf_field() }}
                     <div class="mdl-textfield mdl-js-textfield">
                     <input class="mdl-textfield__input" type="text" name="code" id="code" required value="{{ old('code') }}">
-                    <label class="mdl-textfield__label" id="code-label" for="user">Post Code <small style="opacity: .5">(ex. 5xtp6y)</small></label>
+                    <label class="mdl-textfield__label" id="code-label" for="user">Post Code <small style="opacity: .5">(ex. 5xtp6y | This can be found in the post URL)</small></label>
                     <span class="mdl-textfield__error" id="code-span"></span>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield">
@@ -37,18 +37,6 @@ BY SNIDDL
                     <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="{{ old('keyword') }}">
                     <label class="mdl-textfield__label" for="user">Keyword <small style="opacity: .5">(ex. Car)</small></label>
                     </div>
-                    <div style="margin-top: 40px">
-                      Advanced Options
-                    </div>
-                    <hr>
-                    <div class="mdl-textfield mdl-js-textfield ">
-                    <input class="mdl-textfield__input" type="number" name="karma" id="karma" value="{{ old('karma') }}">
-                    <label class="mdl-textfield__label" for="user">Comment Karma</label>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield ">
-                    <input class="mdl-textfield__input" type="number" name="age" id="age" value="{{ old('age') }}">
-                    <label class="mdl-textfield__label" for="user">Account age (Days)</label>
-                    </div>
                     <button style="float:right" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Go</button>
                 </form>
             </div>
@@ -56,7 +44,7 @@ BY SNIDDL
         <div class="row">
             <div class="col-md-3"></div>
             <div id="entry-thankyou" class="col-md-6" style="display:none;">
-              <center><p>Thank you for visiting Bolt. If you have a bugs/suggestion feel free to <a href="/contact">contact</a> me on Reddit.<p></center>
+              <center><p>Thank you for visiting Bolt. If you have bugs/suggestions feel free to <a href="/contact">contact</a> me on Reddit.<p></center>
             </div>
         </div>
         <div class="row">

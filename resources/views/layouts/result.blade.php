@@ -44,14 +44,7 @@ BY SNIDDL
                     <i class="material-icons">chevron_right</i></a>
                   </span>
                 </li>
-                @if($winner->account)
-                <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right result-tooltip" data-mdl-for="id_{{$count}}">
-                  <ul class="tooltip-list">
-                    <li><strong>Karma</strong>: {{$winner->account['comment_karma']}}</li>
-                    <li><strong>Age</strong>: {{$winner->account['age']}}</li>
-                  </ul>
-                </div>
-                @endif
+
                 <hr>
                 <?php $count ++ ?>
                 @endforeach

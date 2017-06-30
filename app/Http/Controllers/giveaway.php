@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use View;
+use RedditAPI;
 use App\Winner;
 use Illuminate\Support\Collection;
 
@@ -44,6 +45,8 @@ class giveaway extends Controller
 
       $winners = $w->get();
 
+      // $top = RedditAPI::getTop();
+      // dd($top);
       return View::make('layouts.result', compact('winners'));
 
 

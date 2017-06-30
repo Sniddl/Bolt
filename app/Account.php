@@ -11,8 +11,9 @@ class Account
 
   function __construct($account)
   {
+    $continue = false;
     //dd('cats');
-    if ($account != '[deleted]'){
+    if ($account != '[deleted]' && $continue){
       try {
           $ReditAPI = json_decode(file_get_contents('https://www.reddit.com/user/'. $account . '/about.json'), true);
           $this->res = $ReditAPI['data'];
